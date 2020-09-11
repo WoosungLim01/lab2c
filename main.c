@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 int main(void) {
-  char *gradeInput = readline("Enter your CMPSC grade: \n");
+  char *gradeInput = readline("Enter your CMPSC grade: ");
   double grade = atof(gradeInput);
   char *letter;
 
