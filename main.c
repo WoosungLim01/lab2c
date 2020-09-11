@@ -7,11 +7,11 @@
 #include <stdio.h>
 #include <readline/readline.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void) {
   char *grade = readline("Enter your CMPSC grade: ");
   double gradeInput = atof(grade);
-  char *letter;
 
   if (gradeInput >= 93) {
     printf("Your letter grade for CMPSC 131 is A.\n");
