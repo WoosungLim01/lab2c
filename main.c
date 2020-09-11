@@ -9,39 +9,47 @@
 #include <stdlib.h>
 
 int main(void) {
-  char *gradeInput = readline("Enter your CMPSC grade: ");
-  double grade = atof(gradeInput);
+  char *grade = readline("Enter your CMPSC grade: ");
+  double grade = atof(grade);
   char *letter;
 
   if (grade >= 93) {
     letter = "A";
+    printf("Your letter grade for CMPSC 131 is A.");
   }
   else if (grade >= 90) {
     letter = "A-";
+    printf("Your letter grade for CMPSC 131 is A-.");
   }
   else if (grade >= 87) {
     letter = "B+";
+    printf("Your letter grade for CMPSC 131 is B+.");
   }
   else if (grade >= 83) {
     letter = "B";
+    printf("Your letter grade for CMPSC 131 is B.");
   }
   else if (grade >= 80) {
     letter = "B-";
+    printf("Your letter grade for CMPSC 131 is B-.");
   }
   else if (grade >= 77) {
     letter = "C+";
+    printf("Your letter grade for CMPSC 131 is C+.");
   }
   else if (grade >= 70) {
     letter = "C";
+    printf("Your letter grade for CMPSC 131 is C.");
   }
   else if (grade >= 60) {
     letter = "D";
+    printf("Your letter grade for CMPSC 131 is D.");
   }
   else if (grade <= 60) {
     letter = "F";
+    printf("Your letter grade for CMPSC 131 is F.");
   }
   
-  printf("Your letter grade for CMPSC 131 is %s. \n", letter);
 
   return 0;
 }
